@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>OpenBSD_WEBZINE_ISSUE #1</title>
+	<style>
+h1 {
+    text-align: center;
+	font-size:3em;
+	font-weight:bold;
+}
+
+#banner {
+	border-top: .2em double black;
+	border-bottom: .2em double black;
+	padding:.5em;
+	margin-bottom:2em;
+}
+
+.right {
+	text-align:right;
+	float:right;
+}
+
+.puffies {
+	margin: auto;
+	text-align: center;
+}
+
+.permalink {
+    color: black;
+    text-decoration: none;
+}
+
+.permalink:visited {
+    color: black;
+}
+.permalink:hover {
+    color: darkgrey;
+}
+
+p {
+    text-align: justify;
+    text-justify: auto;
+}
+
+html, body {
+    margin: auto;
+    font-size: 1.1em;
+	font-family:serif;
+}
+
+html {
+    background-color: #F5F5F5;
+}
+
+body {
+    background-color: #FEFEFE;
+    padding: 30px;
+    max-width: 80ch;
+}
+main {
+	column-count:2;
+	column-gap: 2em;
+}
+
+	</style>
+    </head>
+
+<body>
