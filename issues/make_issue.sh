@@ -25,3 +25,10 @@ else
 fi
 
 cat _common/header $DIR/*html _common/footer > ../${DEST}/${DIR}.html
+
+# replace with issue number
+issue=$(echo -n "$1" | egrep -o "[0-9]+")
+sed -i "s/__ISSUE__/${issue}/g" ../${DEST}/${DIR}.html
+
+# replace date
+sed -i "s/__DATE__/$(date -u)/" ../${DEST}/${DIR}.html
