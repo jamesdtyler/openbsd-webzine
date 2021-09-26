@@ -2,29 +2,28 @@
     <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>OpenBSD_WEBZINE_ISSUE #1</title>
+	<title>OpenBSD_WEBZINE_ISSUE #__ISSUE__</title>
 	<style>
-h1 {
+
+#title {
     text-align: center;
-	font-size:3em;
-	font-weight:bold;
+    font-size:3em;
+    font-weight:bold;
+    margin:1.25em auto;
 }
 
 #banner {
-	border-top: .2em double black;
-	border-bottom: .2em double black;
-	padding:.5em;
-	margin-bottom:2em;
-}
-
-.right {
-	text-align:right;
-	float:right;
+    border-top: .2em double black;
+    border-bottom: .2em double black;
+    padding:.5em;
+    margin-bottom:2em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .puffies {
-	margin: auto;
-	text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 .permalink {
@@ -35,6 +34,7 @@ h1 {
 .permalink:visited {
     color: black;
 }
+
 .permalink:hover {
     color: darkgrey;
 }
@@ -45,25 +45,24 @@ p {
 }
 
 html, body {
-    margin: auto;
     font-size: 1.1em;
-	font-family:serif;
-}
-
-html {
-    background-color: #F5F5F5;
+    font-family:serif;
+    background-color: #fff;
 }
 
 body {
-    background-color: #FEFEFE;
+    margin: 1em auto;
     padding: 30px;
     max-width: 80ch;
-}
-main {
-	column-count:2;
-	column-gap: 2em;
+    border: 1px solid #111;
+    background-color: #FEFEFE;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+main {
+    column-count:2;
+    column-gap: 2em;
+}
 	</style>
     </head>
 
