@@ -33,7 +33,7 @@ fi
 cat _common/header $DIR/*html _common/footer > $DESTFILENAME
 
 # replace with issue number
-issue=$(echo -n "$1" | egrep -o "[0-9]+")
+issue="${1#issue-}"
 sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
 
 # replace date

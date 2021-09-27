@@ -1,5 +1,5 @@
 all:
-	find . -maxdepth 1 -type d -name 'issue-*' -exec ./make_issue.sh {} \;
+	ls | grep issue- | sort -n | xargs ./make_issue.sh
 	./make_issue.sh _index ../public/index.html
 
 clean:

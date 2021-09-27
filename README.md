@@ -8,7 +8,7 @@ Everything related to writing a new issue is in `issues`.
 
 ## New issue
 
-- Copy `_template` directory under a name like `issue-XXXX` with `XXXX` being the issue number.
+- Copy `_template` directory under a name like `issue-X` with `X` being the new issue number.
 - Delete the symlink `current` and make it with the new issue as a target.
 
 ## Edit an issue
