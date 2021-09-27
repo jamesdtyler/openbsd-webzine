@@ -11,6 +11,7 @@ die() {
 }
 
 DIR=$(basename $1)
+DESTFILENAME=$2
 CURINODE=$(stat -f "%i" current/)
 
 test -d "$DIR" || usage
@@ -24,11 +25,16 @@ else
     DEST=public
 fi
 
-cat _common/header $DIR/*html _common/footer > ../${DEST}/${DIR}.html
+if test -z "$DESTFILENAME"
+then
+    DESTFILENAME="../${DEST}/${DIR}.html"
+fi
+
+cat _common/header $DIR/*html _common/footer > $DESTFILENAME
 
 # replace with issue number
 issue=$(echo -n "$1" | egrep -o "[0-9]+")
-sed -i "s/__ISSUE__/${issue}/g" ../${DEST}/${DIR}.html
+sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
 
 # replace date
-sed -i "s/__DATE__/$(date -u)/" ../${DEST}/${DIR}.html
+sed -i "s/__DATE__/$(date -u)/" $DESTFILENAME
