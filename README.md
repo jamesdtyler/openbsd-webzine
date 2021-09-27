@@ -32,3 +32,18 @@ There are many methods for contributing, here is the list by order of preference
 3. send a simple diff to a contributor.
 4. open an issue.
 5. speak on IRC / XMPP / mail.
+
+# What content?
+
+For each issue we will try to write about these topics:
+
+- jobs offers related to OpenBSD (if any)
+- big changes landing in current
+- syspatch and digest of packages updates in -stable
+- developer or professionals using OpenBSD interviews (if any)
+- tips about shell or OpenBSD
+- comments from readers
+- links to OpenBSD content
+- one piece of artwork
+- a few interesting links to social medias
+
