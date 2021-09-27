@@ -55,14 +55,41 @@ body {
     padding: 30px;
     max-width: 80ch;
     border: 1px solid #111;
-    background-color: #FEFEFE;
+    background-color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	line-height: 1.5;
 }
 
 main {
     column-count:2;
     column-gap: 2em;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+	border: 3px solid black;
+	padding:.25em;
+}
+
+@media print {
+	body { background-color:white; max-width:100%;}
+    main { column-count:1; }
+}
+
+@media screen and (max-width:800px) {
+    main { column-count:1; }
+}
+@media (prefers-color-scheme: dark) {
+    body { color: #eee; background-color: #111; }
+	html { background-color: black; }
+	.permalink { color: #eee; }
+	.permalink:visited { color:#eee; }
+	img {border-color: #eee;}
+	#banner {border-color:#eee;}
+}
+
 	</style>
     </head>
 
