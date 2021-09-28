@@ -74,8 +74,5 @@ $ git commit -m "message"
 $ git push
 ```
 
-You can now ask for a merge request either with your browser on your tildegit account or:
-
-```
-$ git push -o merge_request.create
-```
+You can now ask for a merge request : 
+Menu > Projects > Merge request tab > New request button
