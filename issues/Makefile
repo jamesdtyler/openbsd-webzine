@@ -7,8 +7,8 @@ clean:
 
 test:
 	./make_issue.sh current /tmp/current-issue.html
-	xdg-open ~/tmp/current-issue.html
+	xdg-open /tmp/current-issue.html
 
 testsite:
-	cp -fr ../public ~/tmp/
-	xdg-open ~/tmp/public/index.html
+	cp -fr ../public /tmp/
+	xdg-open /tmp/public/index.html
