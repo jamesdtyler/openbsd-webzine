@@ -6,9 +6,9 @@ clean:
 	rm ../dev/*html
 
 test:
-	./make_issue.sh current ~/Downloads/current-issue.html
-	xdg-open ~/Downloads/current-issue.html
+	./make_issue.sh current /tmp/current-issue.html
+	xdg-open ~/tmp/current-issue.html
 
 testsite:
-	cp -fr ../public ~/Downloads/
-	xdg-open ~/Downloads/public/index.html
+	cp -fr ../public ~/tmp/
+	xdg-open ~/tmp/public/index.html
