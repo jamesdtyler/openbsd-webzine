@@ -27,7 +27,7 @@ Anyone can contribute by doing this:
 
 There are many methods for contributing, here is the list by order of preference (more easier to handle):
 
-1. make an account on tildegit, fork the project, create a new branch with changes and send us Merge Requests (it's easy once you get how this work).
+1. make an account on tildegit, fork the project, create a new branch with changes and send us Merge Requests (it's easy once you get how this work. See "Git usage below").
 2. make a local commit from a freshly updated cloned repository and use `git format-patch` to send an email to a contributor (currently solene) so your commit can be merged into the repository easily.
 3. send a simple diff to a contributor.
 4. open an issue.
@@ -47,3 +47,35 @@ For each issue we will try to write about these topics:
 - one piece of artwork
 - a few interesting links to social medias
 
+## Git usage
+
+Fork this project and clone your own fork.
+Then add the upstream repo.
+
+```
+$ git clone git@tildegit.org:foo/openbsd-webzine.git
+$ cd openbsd-webzine
+$ git remote add upstream https://tildegit.org/solene/openbsd-webzine.git
+```
+
+Keep your fork sync with upstream.
+
+```
+$ git pull upstream main
+```
+
+You can now edit files.
+
+At last, add modified files and commit : 
+
+```
+$ git add issue-*/
+$ git commit -m "message"
+$ git push
+```
+
+You can now ask for a merge request either with your browser on your tildegit account or:
+
+```
+$ git push -o merge_request.create
+```
