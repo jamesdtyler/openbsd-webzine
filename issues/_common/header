@@ -12,7 +12,7 @@
     text-align: center;
     font-size:3em;
     font-weight:bold;
-    margin:1.25em auto;
+    margin:0.75em auto;
 }
 
 #banner {
@@ -29,30 +29,19 @@
     text-align: center;
 }
 
-/*.permalink:hover::after { */
-/*    content: "🔗 "; */
-/*} */
-
 .permalink {
     color: steelblue;
     text-decoration: underline;
 }
-
-/*.permalink:visited {
-    color: black;
-}
-
-.permalink:hover {
-    color: darkgrey;
-}*/
 
 a {
     color:black;
     text-decoration:underline;
 }
 
-a::after { content: " ↗"; }
-a:hover { color: plum; }
+.permalink::after { content: " ↗"; }
+.permalink:hover { color: plum; }
+
 
 p {
     text-align: justify;
@@ -67,7 +56,9 @@ html, body {
 
 body {
     margin: 1em auto;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     max-width: 80ch;
     border: 1px solid #111;
     background-color: #eee;
