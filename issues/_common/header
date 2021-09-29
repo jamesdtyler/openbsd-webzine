@@ -79,6 +79,8 @@ img {
 	padding:.25em;
 }
 
+ul {padding-left:.5em;}
+
 @media print {
     body { background-color:white; max-width:100%;}
     main { column-count:1; }
