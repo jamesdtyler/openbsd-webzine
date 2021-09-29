@@ -27,7 +27,7 @@ ls $DIR/*.html 2>&1 >/dev/null || die "no html file in $DIR"
 
 . ./${DIR}/metadata.sh
 
-if [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
+if [ "$testsite" -eq 0 ] && [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
 then
     DEST=dev
 else
