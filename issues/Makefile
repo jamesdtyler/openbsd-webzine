@@ -12,7 +12,7 @@ generate-site: clean
 all: generate-site
 
 clean:
-	rm -f ../dev/*html ../public/*
+	rm -fr ../dev/*html ../public/*
 
 test:
 	mkdir -p ${TEMPDIR}
