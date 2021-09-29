@@ -1,12 +1,12 @@
 <html lang="en">
     <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<title>OpenBSD_WEBZINE_ISSUE #__ISSUE__</title>
-	<style>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <title>OpenBSD_WEBZINE_ISSUE #__ISSUE__</title>
+        <style>
 
 #title {
     text-align: center;
@@ -18,8 +18,8 @@
 #banner {
     border-top: .2em double black;
     border-bottom: .2em double black;
-    padding:.5em;
-    margin-bottom:2em;
+    padding: .5em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: space-between;
 }
@@ -42,6 +42,10 @@ a {
 .permalink::after { content: " ↗"; }
 .permalink:hover { color: plum; }
 
+h1 {
+    font-size: 1.5em;
+    line-height: 0.9em;
+}
 
 p {
     text-align: justify;
@@ -63,11 +67,11 @@ body {
     border: 1px solid #111;
     background-color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	line-height: 1.5;
+    line-height: 1.5;
 }
 
 main {
-    column-count:2;
+    column-count: 2;
     column-gap: 2em;
 }
 
@@ -75,11 +79,13 @@ img {
     max-width: 100%;
     height: auto;
     margin: auto;
-	border: 3px solid black;
-	padding:.25em;
+    border: 3px solid black;
+    padding: .25em;
 }
 
-ul {padding-left:.5em;}
+ul {
+    padding-left: .5em;
+}
 
 @media print {
     body { background-color:white; max-width:100%;}
@@ -87,19 +93,16 @@ ul {padding-left:.5em;}
 }
 
 @media screen and (max-width:800px) {
-    main { column-count:1; }
+    main { column-count: 1; }
 }
 @media (prefers-color-scheme: dark) {
     body { color: #eee; background-color: #111; }
     html { background-color: black; }
-    .permalink { color: deepskyblue;; }
-    /* .permalink:visited { color:#eee; }*/
+    .permalink { color: deepskyblue; }
     img { border-color: #eee; }
     #banner { border-color:#eee; }
     a { color:#eee; }
 }
-
-	</style>
+        </style>
     </head>
-
 <body>
