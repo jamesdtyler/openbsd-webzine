@@ -7,6 +7,7 @@ generate-site: clean
 	tools/sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
 	gzip -9 -c ../public/sitemap.xml > ../public/sitemap.gz
 	tools/atom.sh webzine.puffy.cafe > ../public/atom.xml
+	xmllint -format ../public/atom.xml
 
 all: generate-site
 
@@ -26,6 +27,7 @@ testsite: clean
 	tools/sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
 	gzip -9 -c ../public/sitemap.xml > ../public/sitemap.gz
 	tools/atom.sh webzine.puffy.cafe > ../public/atom.xml
+	xmllint -format ../public/atom.xml
 	mkdir -p ${TEMPDIR}
 	cp -fr ../public ${TEMPDIR}/
 	xdg-open ${TEMPDIR}/public/index.html
