@@ -31,7 +31,7 @@
 /*} */
 
 .permalink {
-    color: blue;
+    color: steelblue;
     text-decoration: underline;
 }
 
@@ -42,6 +42,14 @@
 .permalink:hover {
     color: darkgrey;
 }*/
+
+a {
+    color:black;
+    text-decoration:underline;
+}
+
+a::after { content: " ↗"; }
+a:hover { color: plum; }
 
 p {
     text-align: justify;
@@ -90,8 +98,9 @@ img {
     html { background-color: black; }
     .permalink { color: deepskyblue;; }
     /* .permalink:visited { color:#eee; }*/
-    img {border-color: #eee;}
-    #banner {border-color:#eee;}
+    img { border-color: #eee; }
+    #banner { border-color:#eee; }
+    a { color:#eee; }
 }
 
 	</style>
