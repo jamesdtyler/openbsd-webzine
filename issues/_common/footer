@@ -1,6 +1,7 @@
         </main>
         <footer>
-            <div id="license">Content under <a class="permalink" href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a></div>
+            <hr />
+            <div id="license">Content under <a class="permalink" href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>. Artworks are under their own licenses.</div>
         </footer>
     </body>
 </html>
