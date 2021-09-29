@@ -3,7 +3,7 @@ generate-site:
 	./make_issue.sh _index ../public/index.html
 	./sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
 	gzip -9 -c ../public/sitemap.xml > ../public/sitemap.gz
-	./atom.sh webzine.puffy.cafe ../public/ > ../public/atom.xml
+	./atom.sh webzine.puffy.cafe > ../public/atom.xml
 
 all: generate-site
 
