@@ -1,8 +1,11 @@
 TEMPDIR=/tmp/openbsd-webzine/
 
-generate-site: clean
-	ls | grep issue- | sort -n | xargs ./make_issue.sh
-	./make_issue.sh _index ../public/index.html
+generate-site:
+	ls | grep issue- | sort -n | xargs tools/make_issue.sh
+	tools/make_issue.sh _index ../public/index.html
+	tools/sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
+	gzip -9 -c ../public/sitemap.xml > ../public/sitemap.gz
+	tools/atom.sh webzine.puffy.cafe > ../public/atom.xml
 
 all: generate-site
 
@@ -11,12 +14,12 @@ clean:
 
 test:
 	mkdir -p ${TEMPDIR}
-	./make_issue.sh current ${TEMPDIR}/current-issue.html
+	tools/make_issue.sh current ${TEMPDIR}/current-issue.html
 	xdg-open ${TEMPDIR}/current-issue.html
 
 testsite: clean
-	ls | grep issue- | sort -n | xargs ./make_issue.sh -t
-	./make_issue.sh _index ../public/index.html
+	ls | grep issue- | sort -n | xargs tools/make_issue.sh -t
+	tools/make_issue.sh _index ../public/index.html
 	mkdir -p ${TEMPDIR}
 	cp -fr ../public ${TEMPDIR}/
 	xdg-open ${TEMPDIR}/public/index.html

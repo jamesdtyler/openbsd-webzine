@@ -1,0 +1,13 @@
+/* SITE */
+Site name : OpenBSD Webzine
+Site url : https://webzine.puffy.cafe
+Built with (CMS) : coffee, tea and love
+Created on : 2021
+Language : English
+Hosted by : prx's house
+
+/* AUTHORS */
+See contributors on https://tildegit.org/solene/openbsd-webzine
+
+/* LINKS */
+Follow (ATOM) : https://webzine.puffy.cafe/atom.xml

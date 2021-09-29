@@ -25,7 +25,9 @@ test -d "$DIR" || usage
 test -d ../public/ || die "You must run this from openbsd-webzine/current"
 ls $DIR/*.html 2>&1 >/dev/null || die "no html file in $DIR"
 
-if [ $testsite -eq 0 ] && [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
+. ./${DIR}/metadata.sh
+
+if [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
 then
     DEST=dev
 else
@@ -44,4 +46,4 @@ issue="${1#issue-}"
 sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
 
 # replace date
-sed -i "s/__DATE__/$(date -u)/" $DESTFILENAME
+sed -i "s/__DATE__/${PUBLISHED_DATE}/" $DESTFILENAME
