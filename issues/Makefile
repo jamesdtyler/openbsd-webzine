@@ -7,6 +7,8 @@ generate-site:
 
 all: generate-site
 
+all: generate-site
+
 clean:
 	rm ../dev/*html
 
