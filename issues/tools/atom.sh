@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 domain="$1"
+tagfirst="2021" # see https://validator.w3.org/feed/docs/error/InvalidTAG.html
 
 # exit if no public issue found
 ls ../public/issue-*.html >/dev/null 2>&1
@@ -10,9 +11,9 @@ date_updated=$(date +%Y-%m-%dT%TZ)
 cat <<EOF
 <?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://${domain}/log/</id>
+  <id>https://${domain}/</id>
   <title>OpenBSD Webzine</title>
-  <icon>https://${domain}/favicon.png</icon>
+  <icon>https://${domain}/favicon-32x32.png</icon>
   <link rel="alternate" type="text/html" href="https://${domain}/" />
   <link rel="self" type="application/atom+xml" href="https://${domain}/atom.xml" />
   <author>
@@ -30,12 +31,13 @@ for page in ../public/issue-*.html ; do
     cat <<EOF
   <entry>
     <title type="text">${title}</title>
-    <id>tag:${domain},2021:${tag}</id>
+    <id>tag:${domain},${tagfirst}:${tag}</id>
     <updated>${PUBLISHED_DATE}</updated>
     <link rel="alternate" type="text/html" href="https://${domain}/${issue}.html" />
     <content type="html">
 <![CDATA[
-$(cat $page)
+    $(sed -n '/<body>/,/<\/body>/p' ${page} |\
+         sed -e '1s/.*<body>//' -e '$s/<\/body>.*//')
 ]]>
 </content>
   </entry>
