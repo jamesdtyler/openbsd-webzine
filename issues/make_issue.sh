@@ -10,6 +10,13 @@ die() {
     exit 1
 }
 
+testsite=0
+if [ "$1" = "-t" ]
+then
+    testsite=1
+    shift
+fi
+
 DIR=$(basename $1)
 DESTFILENAME=$2
 CURINODE=$(stat -f "%i" current/)
@@ -18,7 +25,7 @@ test -d "$DIR" || usage
 test -d ../public/ || die "You must run this from openbsd-webzine/current"
 ls $DIR/*.html 2>&1 >/dev/null || die "no html file in $DIR"
 
-if [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
+if [ $testsite -eq 0 ] && [ "$(stat -f '%i' $DIR)" -eq "$CURINODE" ]
 then
     DEST=dev
 else

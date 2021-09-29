@@ -1,16 +1,22 @@
-generate-site:
+TEMPDIR=/tmp/openbsd-webzine/
+
+generate-site: clean
 	ls | grep issue- | sort -n | xargs ./make_issue.sh
 	./make_issue.sh _index ../public/index.html
 
 all: generate-site
 
 clean:
-	rm ../dev/*html
+	rm -f ../dev/*html ../public/*
 
 test:
-	./make_issue.sh current /tmp/current-issue.html
-	xdg-open /tmp/current-issue.html
+	mkdir -p ${TEMPDIR}
+	./make_issue.sh current ${TEMPDIR}/current-issue.html
+	xdg-open ${TEMPDIR}/current-issue.html
 
-testsite: generate-site
-	cp -fr ../public /tmp/
-	xdg-open /tmp/public/index.html
+testsite: clean
+	ls | grep issue- | sort -n | xargs ./make_issue.sh -t
+	./make_issue.sh _index ../public/index.html
+	mkdir -p ${TEMPDIR}
+	cp -fr ../public ${TEMPDIR}/
+	xdg-open ${TEMPDIR}/public/index.html
