@@ -39,7 +39,7 @@ a {
     text-decoration:underline;
 }
 
-.permalink::after { content: " ↗"; }
+.permalink::before { content: "↗ "; }
 .permalink:hover { color: plum; }
 
 h1 {
