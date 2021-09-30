@@ -41,9 +41,14 @@ fi
 
 cat _common/header $DIR/*html _common/footer > $DESTFILENAME
 
-# replace with issue number
-issue="${1#issue-}"
-sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
+if ! [ "$DIR" = "_index" ]
+then
+    # replace with issue number
+    issue="${1#issue-}"
+    sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
+else
+    sed -i "s/OpenBSD_WEBZINE_ISSUE #__ISSUE__/The OpenBSD Webzine/g" $DESTFILENAME
+fi
 
 # replace date
 sed -i "s/__DATE__/${PUBLISHED_DATE}/" $DESTFILENAME
