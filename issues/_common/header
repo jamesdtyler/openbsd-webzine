@@ -20,6 +20,7 @@
     border-bottom: .2em double black;
     padding: .5em;
     margin-bottom: 2em;
+    text-align:center;
     display: flex;
     justify-content: space-between;
 }
