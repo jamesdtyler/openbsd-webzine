@@ -1,7 +1,7 @@
 TEMPDIR=/tmp/openbsd-webzine/
 
 generate-site: clean
-	ls | grep issue- | sort -n | xargs tools/make_issue.sh
+	ls | grep issue- | sort -n | xargs -n 1 tools/make_issue.sh
 	tools/make_issue.sh _index ../public/index.html
 	cp -fr _static/* ../public/
 	tools/sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
@@ -21,7 +21,7 @@ test:
 
 # only difference with generate-site is make_issue.sh -t
 testsite: clean
-	ls | grep issue- | sort -n | xargs tools/make_issue.sh -t
+	ls | grep issue- | sort -n | xargs -n 1 tools/make_issue.sh -t
 	tools/make_issue.sh _index ../public/index.html
 	cp -fr _static/* ../public/
 	tools/sitemap.sh webzine.puffy.cafe ../public/ > ../public/sitemap.xml
