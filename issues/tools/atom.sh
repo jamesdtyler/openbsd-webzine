@@ -34,12 +34,11 @@ for page in ../public/issue-*.html ; do
     <id>tag:${domain},${tagfirst}:${tag}</id>
     <updated>${PUBLISHED_DATE}</updated>
     <link rel="alternate" type="text/html" href="https://${domain}/${issue}.html" />
-    <content type="html">
-<![CDATA[
-    $(sed -n '/<body>/,/<\/body>/p' ${page} |\
-         sed -e '1s/.*<body>//' -e '$s/<\/body>.*//')
-]]>
-</content>
+    <summary type="html">
+    <![CDATA[
+        $(awk 'f;/<h2>/{f=1}' $issue/10_headlines.html)
+    ]]>
+    </summary>
   </entry>
 EOF
 done
