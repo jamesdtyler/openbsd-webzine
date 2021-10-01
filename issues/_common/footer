@@ -1,7 +1,7 @@
         </main>
         <footer>
             <hr />
-            <div id="license">Content under <a class="permalink" href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>. Artworks are under their own licenses.
+            <div id="license">Content under <a class="permalink" href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-4.0</a>. Artworks are under their own licenses.
 	    <br /><a class="permalink" href="atom.xml">follow us</a></div>
         </footer>
     </body>
