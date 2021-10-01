@@ -16,6 +16,10 @@
     margin:0.75em auto;
 }
 
+#title a {
+    text-decoration: none;
+}
+
 #banner {
     border-top: .2em double black;
     border-bottom: .2em double black;
