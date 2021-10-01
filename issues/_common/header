@@ -6,6 +6,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="alternate" type="application/rss+xml" href="https://webzine.puffy.cafe/atom.xml">
+	<meta property="og:title" content="OpenBSD webzine issue #__ISSUE__" />
+	<meta property="og:description" content="Webzine done by volunteers who are passionate about the OpenBSD project development." />
+	<meta property="og:url" content="https://webzine.puffy.cafe/issue-__ISSUE__.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en_EN" />
         <title>OpenBSD_WEBZINE_ISSUE #__ISSUE__</title>
         <style>
 
