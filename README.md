@@ -2,55 +2,55 @@
 
 Repository of the OpenBSD Webzine
 
-# Worflow
+# Workflow
 
-Everything related to writing a new issue is in `issues`.
+Everything related to writing a new issue is under `issues` directory.
 
 ## New issue
 
-- Copy `_template` directory under a name like `issue-X` with `X` being the new issue number.
-- Delete the symlink `current` and make it with the new issue as a target.
+- copy `_template` directory under a name like `issue-X` with `X` being the new issue number
+- delete the symlink `current` and recreate it with the new issue as the target
 
 ## Edit an issue
 
-- cd into `issues/current/` and edit files as you need.  Categories that are empty should be commented out using html comments.
-- when you recreate the issues with `make`, the one in development is generated in `../dev/`.
-- use `make test` to automatically copy the current issue in `~/Downloads` and open it in a web browser
+- cd into `issues/current/` and edit files as needed
+- categories that are empty should be commented out using HTML comments
+- when you recreate the issues with `make`, the one in development is generated in `../dev/`
+- use `make test` to automatically copy the current issue to `/tmp/openbsd-webzine` directory and open it in a web browser
 
 # Contributing
 
-Anyone can contribute by doing this:
+Anyone can contribute by doing the following:
 
 - English proofreading
-- Translation into other languages
-- Content contribution
+- translation into other languages
+- content contribution
 
-There are many methods for contributing, here is the list by order of preference (more easier to handle):
+There are many ways to contribute - here is a list by order of preference (easier to handle):
 
-1. make an account on tildegit, fork the project, create a new branch with changes and send us Merge Requests (it's easy once you get how this work. See "Git usage below").
-2. make a local commit from a freshly updated cloned repository and use `git format-patch` to send an email to a contributor (currently solene) so your commit can be merged into the repository easily.
-3. send a simple diff to a contributor.
-4. open an issue.
-5. speak on IRC / XMPP / mail.
+1. make an account on tildegit, fork the project, create a new branch with changes, and send us Pull Requests (it's easy once you get how this work - see "Git usage" below)
+2. make a local commit from a freshly updated cloned repository and use `git format-patch` to send an email to a contributor (currently solene) so your commit can be merged into the repository easily
+3. send a simple diff to a contributor
+4. open an issue
+5. speak on IRC / XMPP / email
 
 # What content?
 
 For each issue we will try to write about these topics:
 
-- jobs offers related to OpenBSD (if any)
+- job offers related to OpenBSD (if any)
 - big changes landing in current
-- syspatch and digest of packages updates in -stable
-- developer or professionals using OpenBSD interviews (if any)
+- syspatch and digest of package updates in -stable
+- interviews with developers or professionals using OpenBSD (if any)
 - tips about shell or OpenBSD
 - comments from readers
 - links to OpenBSD content
-- one piece of artwork
-- a few interesting links to social medias
+- a piece of artwork
+- a few interesting links to social media
 
 ## Git usage
 
-Fork this project and clone your own fork.
-Then add the upstream repo.
+Fork this project and clone your own fork, then add the upstream repo.
 
 ```
 $ git clone git@tildegit.org:foo/openbsd-webzine.git
@@ -66,7 +66,7 @@ $ git pull upstream main
 
 You can now edit files.
 
-At last, add modified files and commit : 
+At last, add modified files and commit:
 
 ```
 $ git add issue-*/
