@@ -46,8 +46,12 @@ then
     # replace with issue number
     issue="${1#issue-}"
     sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
+    sed -i "s/__TITLE__/issue #${issue}/g" $DESTFILENAME
+    sed -i "s/__FILENAME__/issue-${issue}.html/" $DESTFILENAME
 else
     sed -i "s/OpenBSD_WEBZINE_ISSUE #__ISSUE__/The OpenBSD Webzine/g" $DESTFILENAME
+    sed -i "s/__TITLE__/homepage/g" $DESTFILENAME
+    sed -i "s/__FILENAME__/index.html/" $DESTFILENAME
 fi
 
 # replace date
