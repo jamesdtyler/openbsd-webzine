@@ -1,4 +1,4 @@
-TEMPDIR=/tmp/openbsd-webzine/
+TEMPDIR=/tmp/openbsd-webzine
 
 generate-site: clean
 	ls | grep issue- | sort -n | xargs -n 1 tools/make_issue.sh
