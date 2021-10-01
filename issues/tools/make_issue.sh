@@ -1,7 +1,7 @@
 #!/bin/sh
 
 usage() {
-    echo "./$0 directory"
+    echo "$0 directory"
     exit 1
 }
 
