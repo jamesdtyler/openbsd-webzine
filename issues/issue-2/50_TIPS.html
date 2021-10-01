@@ -1,5 +1,7 @@
 <!-- SECTION -->
 <div class="puffies" aria-hidden="true">🐡🐡🐡</div>
 <h1>Shell tips</h1>
-<p>
+<p>OpenBSD 7.0 comes with a new utility named <em>timeout</em> to run a command and stop it after an user defined time.  The <a class="permalink" href="https://man.openbsd.org/timeout">man page</a> is available for full information.
+While it was possible to achieve this in shell using a child process sleeping for some time and stopping the main process if it wasn't finished yet, <em>timeout</em> makes this job very easy.
+One simple real world use case would be a lazy site-to-site synchronization using a rsync job run every night when the Internet uplink can be fully used and stop it right before people will need the network.  Such a scenario can be done with <code>timeout 8h rsync -a /data/ remote:/data/</code> and started from a cron job at 00h00.  In this case rsync would run at midnight and <em>timeout</em> would stop it at 8h00 if the job is not finished.
 </p>
