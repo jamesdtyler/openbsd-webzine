@@ -8,6 +8,12 @@ $ chmod 700 $(userinfo $(whoami) | grep dir | awk '{print $2}')
 shortcuts in shell (emacs mode)
 difference between zzz and ZZZ
 
+7.0 stuff to put
+----------------
+resolvd + dhcpleased is now default
+upgrade guide to link
+versions of popular packages
+
 Links
 -----
 OpenBSD on the Huawei MateBook X (2020)	https://jcs.org/2021/08/20/matebook
