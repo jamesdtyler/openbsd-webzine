@@ -11,6 +11,14 @@ Everything related to writing a new issue is under `issues` directory.
 - copy `_template` directory under a name like `issue-X` with `X` being the new issue number
 - delete the symlink `current` and recreate it with the new issue as the target
 
+I.e.
+
+```
+$ cd issues
+$ cp -r _template issue-3
+$ ln -fs issue-3 current
+```
+
 ## Edit an issue
 
 - cd into `issues/current/` and edit files as needed
@@ -29,7 +37,7 @@ Anyone can contribute by doing the following:
 There are many ways to contribute - here is a list by order of preference (easier to handle):
 
 1. make an account on tildegit, fork the project, create a new branch with changes, and send us Pull Requests (it's easy once you get how this work - see "Git usage" below)
-2. make a local commit from a freshly updated cloned repository and use `git format-patch` to send an email to a contributor (currently solene) so your commit can be merged into the repository easily
+2. make a local commit from a freshly updated cloned repository and use `git format-patch` to send an email to a contributor (currently _solene_) so your commit can be merged into the repository easily
 3. send a simple diff to a contributor
 4. open an issue
 5. speak on IRC / XMPP / email
@@ -39,8 +47,8 @@ There are many ways to contribute - here is a list by order of preference (easie
 For each issue we will try to write about these topics:
 
 - job offers related to OpenBSD (if any)
-- big changes landing in current
-- syspatch and digest of package updates in -stable
+- big changes landing in _-current_
+- syspatch and digest of package updates in _-stable_
 - interviews with developers or professionals using OpenBSD (if any)
 - tips about shell or OpenBSD
 - comments from readers
