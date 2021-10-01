@@ -74,5 +74,4 @@ $ git commit -m "message"
 $ git push
 ```
 
-You can now ask for a merge request : 
-Menu > Projects > Merge request tab > New request button
+You can now ask for your Pull Request to get merged.
