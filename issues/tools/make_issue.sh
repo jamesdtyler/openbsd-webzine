@@ -58,8 +58,8 @@ fi
 HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")" 2>/dev/null
 
 if [ $? -ne 0 ]; then
-    echo "warn: Please fill metadata.sh with ISO-8601 valid date"
-    sed -i "s/__DATE__/NOT_SET_YET/" $DESTFILENAME
+    echo "err: Please fill metadata.sh with ISO-8601 valid date"
+    exit 1
 else
     sed -i "s/__DATE__/${HUMAN_DATE}/" $DESTFILENAME
 fi
