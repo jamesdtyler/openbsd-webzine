@@ -125,7 +125,7 @@ blockquote:after {
 
 cite {
     font-size: smaller;
-	text-align: right;
+    text-align: right;
     width:100%;
     display:block;
 }
