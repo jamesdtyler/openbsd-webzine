@@ -100,27 +100,27 @@ ul {
 }
 
 blockquote {
-	position: relative;
-	padding: 1.5rem;
+    position: relative;
+    padding: 1.5rem;
 }
 
 blockquote:before,
 blockquote:after {
-	position: absolute;
-	font-size: 4rem;
+    position: absolute;
+    font-size: 4rem;
     color:rgba(128,128,128,0.5);
 }
 
 blockquote:before {
-	content: open-quote;
-	left: -1rem;
-	top: -1rem;
+    content: open-quote;
+    left: -1rem;
+    top: -1rem;
 }
 
 blockquote:after {
-	content: close-quote;
-	right: -1rem;
-	bottom: -1rem;
+    content: close-quote;
+    right: -1rem;
+    bottom: -1rem;
 }
 
 cite {
