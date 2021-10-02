@@ -1,0 +1,1 @@
+PUBLISHED_DATE="FIXME%Y-%m-%dT%H:%M:%SZ"

@@ -1,0 +1,1 @@
+PUBLISHED_DATE="%Y-%m-%dT%H:%M:%SZ"
