@@ -1,1 +1,1 @@
-PUBLISHED_DATE="FIXME%Y-%m-%dT%H:%M:%SZ"
+PUBLISHED_DATE="%Y-%m-%dT%H:%M:%SZ"
