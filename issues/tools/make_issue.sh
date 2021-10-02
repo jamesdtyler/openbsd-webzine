@@ -55,4 +55,5 @@ else
 fi
 
 # replace date
-sed -i "s/__DATE__/${PUBLISHED_DATE}/" $DESTFILENAME
+HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")"
+sed -i "s/__DATE__/${HUMAN_DATE}/" $DESTFILENAME
