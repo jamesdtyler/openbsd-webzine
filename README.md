@@ -1,6 +1,6 @@
 # openbsd-webzine
 
-Repository of the OpenBSD Webzine
+Repository of the [OpenBSD Webzine](https://webzine.puffy.cafe/)
 
 # Workflow
 
