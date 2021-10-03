@@ -10,6 +10,7 @@
         <meta property="og:title" content="OpenBSD webzine __TITLE__" />
         <meta property="og:description" content="Webzine created by volunteers who are passionate about the OpenBSD project development." />
         <meta property="og:url" content="https://webzine.puffy.cafe/__FILENAME__" />
+        <meta property="og:image" content="https://webzine.puffy.cafe/images/logo.png" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_EN" />
         <title>OpenBSD_WEBZINE_ISSUE #__ISSUE__</title>
