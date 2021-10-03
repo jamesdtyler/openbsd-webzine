@@ -48,18 +48,19 @@ then
     sed -i "s/__ISSUE__/${issue}/g" $DESTFILENAME
     sed -i "s/__TITLE__/issue #${issue}/g" $DESTFILENAME
     sed -i "s/__FILENAME__/issue-${issue}.html/" $DESTFILENAME
+    # replace date
+    HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")" 2>/dev/null
+
+    if [ $? -ne 0 ]; then
+        echo "err: Please fill ${DIR}/metadata.sh with ISO-8601 valid date"
+        exit 1
+    else
+        sed -i "s/__DATE__/${HUMAN_DATE}/" $DESTFILENAME
+    fi
 else
+    # index.html changes
     sed -i "s/OpenBSD_WEBZINE_ISSUE #__ISSUE__/The OpenBSD Webzine/g" $DESTFILENAME
     sed -i "s/__TITLE__/homepage/g" $DESTFILENAME
     sed -i "s/__FILENAME__/index.html/" $DESTFILENAME
 fi
 
-# replace date
-HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")" 2>/dev/null
-
-if [ $? -ne 0 ]; then
-    echo "err: Please fill metadata.sh with ISO-8601 valid date"
-    exit 1
-else
-    sed -i "s/__DATE__/${HUMAN_DATE}/" $DESTFILENAME
-fi
