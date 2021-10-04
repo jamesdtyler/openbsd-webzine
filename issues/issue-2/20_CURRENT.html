@@ -1,6 +1,15 @@
 <!-- SECTION -->
 <div class="puffies" aria-hidden="true">🐡🐡🐡</div>
-<h1>Recent -current changes</h1>
+<h1>New 7.0 release changes</h1>
 <ul>
-    <li>Packages commits will flow after three weeks of locked ports tree.  Some breakages could happen.</li>
+    <li>doas is now asking password again on failure</li>
+    <li>better hardware support (AMD, docks)</li>
+    <li>faster (un)hibernate (ZZZ)</li>
+    <li>faster wifi speed</li>
+    <li>xterm has unveil</li>
+    <li>base gcc removed on amd64</li>
+    <li>bsd-reconfig to have a KARL compatible modified kernel</li>
+    <li>new <em>dhcpleased</em> and <em>resolvd</em> superseeding dhclient (now default for new installs). After upgrade you can switch to it: replace <code>dhcp</code> by <code>autoconf</code> in your network <code>hostname.if</code> file then enable and start the two services</li>
+    <li>performance improvements for heavy loads on many cores</li>
+    <li><a href="https://www.openbsd.org/plus70.html" class="permalink">Many other changes!</a></li>
 </ul>
