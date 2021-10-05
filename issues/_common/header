@@ -23,8 +23,14 @@
     margin:0.75em auto;
 }
 
-#title a {
-    text-decoration: none;
+#bsd {
+    color: red;
+    border-bottom: 1px solid red;
+}
+#open {
+    font-style: italic;
+    color: yellow;
+    border-bottom: 1px solid red;
 }
 
 #banner {
@@ -44,12 +50,12 @@
 
 .permalink {
     color: steelblue;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a {
     color:black;
-    text-decoration:underline;
+    text-decoration: none;
 }
 
 .permalink::before { content: "↗ "; }
@@ -76,7 +82,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    max-width: 80ch;
+    max-width: 1080px;
     border: 1px solid #111;
     background-color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -102,33 +108,34 @@ ul {
 
 blockquote {
     position: relative;
-    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.2rem;
 }
 
 blockquote:before,
 blockquote:after {
     position: absolute;
     font-size: 4rem;
-    color:rgba(128,128,128,0.5);
+    color: rgba(128,128,128,0.5);
 }
 
 blockquote:before {
     content: open-quote;
     left: -1rem;
-    top: -1rem;
+    top: -1.5rem;
 }
 
 blockquote:after {
     content: close-quote;
-    right: -1rem;
-    bottom: -1rem;
+    text-align: right;
+    width: 100%;
 }
 
 cite {
     font-size: smaller;
     text-align: right;
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 @media print {
@@ -145,7 +152,7 @@ cite {
     .permalink { color: deepskyblue; }
     img { border-color: #eee; }
     #banner { border-color:#eee; }
-    a { color:#eee; }
+    a { color: #eee; }
 }
         </style>
     </head>
