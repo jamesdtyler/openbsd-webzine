@@ -9,6 +9,9 @@ generate-site: clean
 	tools/atom.sh webzine.puffy.cafe > ../public/atom.xml
 	xmllint -format ../public/atom.xml
 
+puffy: clean
+	tools/make_issue.sh _puffy.cafe ../public/index.html
+
 all: generate-site
 
 clean:
