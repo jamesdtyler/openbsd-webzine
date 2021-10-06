@@ -41,7 +41,7 @@ fi
 
 cat _common/header $DIR/*html _common/footer > $DESTFILENAME
 
-if ! [ "$DIR" = "_index" ]
+if echo $DIR | grep issue
 then
     set -e
     # replace with issue number
