@@ -21,6 +21,7 @@
     font-size:3em;
     font-weight:bold;
     margin:0.75em auto;
+    text-shadow: 0 0 3px black;
 }
 
 #bsd {
@@ -29,7 +30,7 @@
 }
 #open {
     font-style: italic;
-    color: yellow;
+    color: #f5d300;
     border-bottom: 1px solid red;
 }
 
