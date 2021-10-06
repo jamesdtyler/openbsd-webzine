@@ -4,6 +4,7 @@
             <p id="license">Content under <a class="permalink" href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-4.0</a>. Artworks are under their own licenses.
 	        <br /><a class="permalink" href="atom.xml">Feed ATOM</a>
             </p>
+	    <p id="contributors">Made with ♥ by __CONTRIBUTORS__</p>
         </footer>
     </body>
 </html>

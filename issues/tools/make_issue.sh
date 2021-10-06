@@ -60,10 +60,29 @@ then
     fi
     sed -i "s,__DATETIME__,${DATETIME}," $DESTFILENAME
     sed -i "s/__HUMAN_DATE__/${HUMAN_DATE}/" $DESTFILENAME
+
+    # find contributors since last issue. This must be at last /!\
+    lastissue=$(( $issue - 1 ))
+    if [ $lastissue -ge 1 ]; then
+        . ./issue-${lastissue}/metadata.sh
+        lastdate="${PUBLISHED_DATE}"
+    else
+	lastdate="0"
+    fi
+    contributors="$(git log --reverse --format=%aN --since=2021-09-30T20:12:00Z |\
+                        sort |\
+                        uniq -c |\
+                        sort -r |\
+                        awk '{for (i=2;i<=NF;i++) {printf $i " "} printf"- " }' |\
+                        sed 's/..$//')"
+    sed -i "s/__CONTRIBUTORS__/$contributors/g" $DESTFILENAME
+    echo $contributors > /tmp/test.txt
+
 else
     # index.html changes
     sed -i "s/ #__ISSUE__//g" $DESTFILENAME
     sed -i "s/__TITLE__/homepage/g" $DESTFILENAME
     sed -i "s/__FILENAME__/index.html/" $DESTFILENAME
+    sed -i "/__CONTRIBUTORS__/d" $DESTFILENAME
 fi
 
