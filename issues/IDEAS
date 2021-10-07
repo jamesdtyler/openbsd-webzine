@@ -8,10 +8,12 @@ $ chmod 700 $(userinfo $(whoami) | grep dir | awk '{print $2}')
 shortcuts in shell (emacs mode)
 difference between zzz and ZZZ
 
+Current changes
+---------------
+loongson will not be supported after 7.0 https://www.openbsd.org/loongson.html
+
 7.0 stuff to put
 ----------------
-resolvd + dhcpleased is now default
-upgrade guide to link
 versions of popular packages
 
 Links
@@ -28,10 +30,7 @@ Realtek wireless firmware imported https://www.undeadly.org/cgi?action=article;s
 
 Communities
 -----------
-List various communities around OpenBSD : 
-* [reddit](https://reddit.com/r/openbsd/)
-* [Mailing lists (of course)](https://www.openbsd.org/mail.html)
-* IRC: #OpenBSD on irc.libera.chat
+
 * XMPP : OpenBSD on openbsd@chat.si3t.ch ?
 
 Artworks
