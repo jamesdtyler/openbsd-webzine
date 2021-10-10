@@ -8,6 +8,7 @@ generate-site: clean
 	gzip -9 -c ../public/sitemap.xml > ../public/sitemap.gz
 	tools/atom.sh webzine.puffy.cafe > ../public/atom.xml
 	xmllint -format ../public/atom.xml
+	tools/compress_static.sh
 
 puffy: clean
 	tools/make_issue.sh _puffy.cafe ../public/index.html
