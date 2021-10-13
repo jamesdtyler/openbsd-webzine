@@ -12,15 +12,11 @@ Current changes
 ---------------
 loongson will not be supported after 7.0 https://www.openbsd.org/loongson.html
 
-7.0 stuff to put
-----------------
-versions of popular packages
-
 Links
 -----
+OpenBSD tshirts and stuff to buy
 OpenBSD on the Huawei MateBook X (2020)	https://jcs.org/2021/08/20/matebook
 OpenBSD on the Framework Laptop		https://jcs.org/2021/08/06/framework
-My Fanless OpenBSD Desktop		https://jcs.org/2021/07/19/desktop
 Bluetooth audio on OpenBSD		https://jcs.org/2020/11/18/openbsd_btaudio
 Installing OpenBSD on Linode    https://text.causal.agency/027-openbsd-linode.txt
 Why OpenBSD Rocks               https://why-openbsd.rocks/fact
