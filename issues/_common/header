@@ -21,7 +21,7 @@
     font-size:3em;
     font-weight:bold;
     margin:0.75em auto;
-    text-shadow: 0 0 3px black;
+    text-shadow: 2px 2px 2px grey;
 }
 
 #bsd {
