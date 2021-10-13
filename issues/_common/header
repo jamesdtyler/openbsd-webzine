@@ -50,12 +50,12 @@
 }
 
 .permalink {
-    color: steelblue;
+    color: blue;
     text-decoration: none;
 }
 
 a {
-    color:black;
+    color: black;
     text-decoration: none;
 }
 
