@@ -60,7 +60,7 @@ a {
 }
 
 .permalink::before { content: "↗ "; }
-.permalink:hover { color: plum; }
+.permalink:hover { color: darkblue; }
 
 h1 {
     font-size: 1.5em;
@@ -139,6 +139,12 @@ cite {
     display: block;
 }
 
+code {
+    background-color: #8DF;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 @media print {
     body { background-color:white; max-width:100%;}
     main { column-count:1; }
@@ -154,6 +160,8 @@ cite {
     img { border-color: #ccc; }
     #banner { border-color:#ccc; }
     a { color: #ccc; }
+    code { background-color: black; color: lightgreen; }
+    .permalink:hover { color: plum; }
 }
         </style>
     </head>
