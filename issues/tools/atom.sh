@@ -36,7 +36,7 @@ for page in ../public/issue-*.html ; do
     <link rel="alternate" type="text/html" href="https://${domain}/${issue}.html" />
     <summary type="html">
     <![CDATA[
-        $(awk 'f;/<h1>/{f=1}' $issue/10_HEADLINES.html)
+        $(sed "1d;2d;$d" $issue/10_HEADLINES.html)
     ]]>
     </summary>
   </entry>
