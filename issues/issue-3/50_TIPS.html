@@ -2,5 +2,8 @@
 <div class="puffies" aria-hidden="true">🐡🐡🐡</div>
 <h2>Shell tips</h2>
 <p>
+Display the current month calendar with current day highlited:
+
+<pre>cal -m | sed "s/ $(date +%d) /$(printf " \033[1;30;44m$(date +%d)\033[0m ")/"
 </p>
 </article>
