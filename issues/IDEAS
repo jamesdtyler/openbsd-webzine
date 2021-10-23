@@ -11,7 +11,6 @@ r : repeat last command
 
 Current changes
 ---------------
-loongson will not be supported after 7.0 https://www.openbsd.org/loongson.html
 
 Links
 -----
@@ -21,26 +20,24 @@ OpenBSD on the Huawei MateBook X (2020)	https://jcs.org/2021/08/20/matebook
 OpenBSD on the Framework Laptop		https://jcs.org/2021/08/06/framework
 Bluetooth audio on OpenBSD		https://jcs.org/2020/11/18/openbsd_btaudio
 Installing OpenBSD on Linode    https://text.causal.agency/027-openbsd-linode.txt
-Why OpenBSD Rocks               https://why-openbsd.rocks/fact
-bcallah@ interview		https://www.bsdnow.tv/422
 What every IT person needs to know about OpenBSD (Peter N.M. Hansteen) https://bsdly.blogspot.com/2021/09/what-every-it-person-needs-to-know.html
 Realtek wireless firmware imported https://www.undeadly.org/cgi?action=article;sid=20211004070841
 
 Communities
 -----------
 
-* XMPP : OpenBSD on openbsd@chat.si3t.ch ?
-
 Artworks
 --------
 - https://bsd.network/@prahou/107026745346972847
 - https://bsd.network/@prahou/106992809510937579
 - https://bsd.network/@prahou/106965372352267989
+- https://si3t.ch/img/gifs/openbsd-puffy-crypto.gif (unkown author)
+- https://si3t.ch/img/gifs/openbsd-puffy.gif (unkown author)
+- https://si3t.ch/img/wallpapers/isotopwall.jpg (by Péhä)
+- https://si3t.ch/img/wallpapers/isotopwall.jpg (by Péhä)
+- https://si3t.ch/img/peha/puffybsdpeha.png (by Péhä)
 
 Readers comments
 ----------------
 
-- https://bsd.network/@solene/107022527104955737
-- https://news.ycombinator.com/item?id=28711519
-- https://lobste.rs/s/lyo9jv/openbsd_webzine
 - https://old.reddit.com/r/openbsd/comments/pz45vd/openbsd_webzine_issue_1/
