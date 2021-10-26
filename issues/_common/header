@@ -83,7 +83,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    max-width: 1080px;
+    max-width: 1280px;
     border: 1px solid #111;
     background-color: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -150,7 +150,7 @@ code {
     main { column-count:1; }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
     main { column-count: 1; }
 }
 @media (prefers-color-scheme: dark) {

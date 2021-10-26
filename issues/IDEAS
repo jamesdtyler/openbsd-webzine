@@ -2,7 +2,6 @@ Tips
 ----
 webzine has a dark mode, how to enable it in firefox / chrome
 how to use openrsync from base system
-cvs -z9 option
 /tmp in mfs
 $ chmod 700 $(userinfo $(whoami) | grep dir | awk '{print $2}')
 shortcuts in shell (emacs mode)
@@ -14,29 +13,28 @@ Current changes
 
 Links
 -----
+searx					https://www.tumfatig.net/2021/running-the-searx-metasearch-engine-on-openbsd/
+BSD auth				https://blog.lambda.cx/posts/how-bsd-authentication-works/
+Risc computer				https://kernelpanic.life/hardware/hifive-unmatched.html
+Using OpenBSD mid-2014 macbook pro	https://text.causal.agency/016-using-openbsd.txt
 Full wireguard setup			https://dataswamp.org/~solene/2021-10-09-openbsd-wireguard-exit.html
-OpenBSD tshirts and stuff to buy
 OpenBSD on the Huawei MateBook X (2020)	https://jcs.org/2021/08/20/matebook
 OpenBSD on the Framework Laptop		https://jcs.org/2021/08/06/framework
 Bluetooth audio on OpenBSD		https://jcs.org/2020/11/18/openbsd_btaudio
-Installing OpenBSD on Linode    https://text.causal.agency/027-openbsd-linode.txt
-Realtek wireless firmware imported https://www.undeadly.org/cgi?action=article;sid=20211004070841
+Installing OpenBSD on Linode    	https://text.causal.agency/027-openbsd-linode.txt
+Realtek wireless firmware imported 	https://www.undeadly.org/cgi?action=article;sid=20211004070841
 
 Communities
 -----------
 
 Artworks
 --------
-- https://bsd.network/@prahou/107026745346972847
-- https://bsd.network/@prahou/106992809510937579
 - https://bsd.network/@prahou/106965372352267989
 - https://si3t.ch/img/gifs/openbsd-puffy-crypto.gif (unkown author)
 - https://si3t.ch/img/gifs/openbsd-puffy.gif (unkown author)
-- https://si3t.ch/img/wallpapers/isotopwall.jpg (by Péhä)
 - https://si3t.ch/img/wallpapers/isotopwall.jpg (by Péhä)
 - https://si3t.ch/img/peha/puffybsdpeha.png (by Péhä)
 
 Readers comments
 ----------------
 
-- https://old.reddit.com/r/openbsd/comments/pz45vd/openbsd_webzine_issue_1/
