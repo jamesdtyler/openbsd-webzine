@@ -6,6 +6,7 @@ how to use openrsync from base system
 $ chmod 700 $(userinfo $(whoami) | grep dir | awk '{print $2}')
 shortcuts in shell (emacs mode)
 difference between zzz and ZZZ
+how to mimic lsblk on Linux
 
 Current changes
 ---------------
