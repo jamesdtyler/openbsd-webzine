@@ -3,10 +3,14 @@ Tips
 webzine has a dark mode, how to enable it in firefox / chrome
 how to use openrsync from base system
 /tmp in mfs
-$ chmod 700 $(userinfo $(whoami) | grep dir | awk '{print $2}')
 shortcuts in shell (emacs mode)
-difference between zzz and ZZZ
 how to mimic lsblk on Linux
+vi mode in the shell
+pkg-readmes
+
+Article
+-------
+difference between zzz and ZZZ
 
 Current changes
 ---------------
@@ -21,7 +25,6 @@ Artworks
 --------
 - https://bsd.network/@prahou/106965372352267989
 - https://si3t.ch/img/gifs/openbsd-puffy-crypto.gif (unkown author)
-- https://si3t.ch/img/gifs/openbsd-puffy.gif (unkown author)
 - https://si3t.ch/img/wallpapers/isotopwall.jpg (by Péhä)
 - https://si3t.ch/img/peha/puffybsdpeha.png (by Péhä)
 
