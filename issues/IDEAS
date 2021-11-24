@@ -5,8 +5,8 @@ how to use openrsync from base system
 /tmp in mfs
 shortcuts in shell (emacs mode)
 how to mimic lsblk on Linux
-vi mode in the shell
 pkg-readmes
+ksh autocompletion examples
 
 Article
 -------
@@ -31,4 +31,3 @@ Artworks
 Readers comments
 ----------------
 https://social.tchncs.de/@pkotrcka/107259557921442881
-https://bsd.network/@jaywilliams/107259666091218206
