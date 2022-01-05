@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -x
 usage() {
     echo "$0 directory"
     exit 1
@@ -50,8 +51,8 @@ then
     sed -i "s/__TITLE__/issue #${issue}/g" $DESTFILENAME
     sed -i "s/__FILENAME__/issue-${issue}.html/" $DESTFILENAME
     # replace date
-    DATETIME="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%Y-%m-%d %H:%M")" 2>/dev/null
-    HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")" 2>/dev/null
+    DATETIME="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%Y-%m-%d %H:%M")"
+    HUMAN_DATE="$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "${PUBLISHED_DATE}" +"%B %e, %Y")"
 
     if [ $? -ne 0 ];
     then
