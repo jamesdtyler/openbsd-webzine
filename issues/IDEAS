@@ -4,7 +4,6 @@ webzine has a dark mode, how to enable it in firefox / chrome
 how to use openrsync from base system
 /tmp in mfs
 how to mimic lsblk on Linux
-pkg-readmes
 ksh autocompletion examples
 
 Article
@@ -13,7 +12,6 @@ difference between zzz and ZZZ
 
 Current changes
 ---------------
-drm update		https://marc.info/?l=openbsd-cvs&m=164214312609256&w=2
 
 Links
 -----

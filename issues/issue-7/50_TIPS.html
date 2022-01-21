@@ -1,0 +1,11 @@
+<article id="tips">
+<div class="puffies" aria-hidden="true">🐡🐡🐡</div>
+<h2>Shell tips</h2>
+<p>
+You must know that some ports are shipped with extra documentation specific to OpenBSD : those stored in <code>/usr/local/share/doc/pkg_readmes</code>.
+</p>
+<p>Take time to read them. Pick one with the following line :</p>
+<pre>
+d=/usr/local/share/doc/pkg-readmes; select f in $(ls $d/); do $PAGER "$d/$f"; done
+</pre>
+</article>
